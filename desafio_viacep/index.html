@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Cadastro do Usuário</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <!-- Bibliotecas JS -->
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <!-- Códigos -->
+        <script src="js/mascara.js"></script>
+        <script src="js/viacep.js"></script>
+    </head>
+
+    <body>
+        <div id="box">
+          
+            <h1>Cadastro</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required><br>
+
+            <label for="sobrenome">Sobrenome:</label>
+             <input type="text" id="sobrenome" required><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required><br>
+
+            <label>CEP</label>
+            <input type="text" id="i_cep" placeholder="00000-000" onblur="pesquisa_cep(this.value)">
+
+            <label>Rua</label>
+            <input type="text" id="i_rua">
+
+            <label>Bairro</label>
+            <input type="text" id="i_bairro">
+
+            <label>Cidade</label>
+            <input type="text" id="i_cidade">
+
+            <label>Estado</label>
+            <input type="text" id="i_estado">
+
+            <input type="submit" value="Cadastrar" id="btt">
+        </div>
+
+    </body>
+
+</html>
